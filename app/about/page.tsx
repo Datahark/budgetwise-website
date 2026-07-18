@@ -1,0 +1,4 @@
+import type { Metadata } from 'next'
+import { LegalShell } from '@/components/landing/legal-shell'
+export const metadata: Metadata = { title: 'About' }
+export default function Page() { return <LegalShell title="About BudgetWise" description="A personal finance app designed to make money management clearer for Indian users."><p>BudgetWise brings day-to-day financial activity into one connected experience: accounts, transactions, category budgets, savings goals, recurring plans and detailed reports.</p><h2>Our focus</h2><ul><li>Fast, understandable transaction entry.</li><li>Useful INR-first summaries and reports.</li><li>User-controlled exports, backup and restore.</li><li>A clean interface without unnecessary complexity.</li></ul><h2>Current stage</h2><p>The Android app is being prepared for public release. The Google Play link will appear on this website once the listing is live.</p></LegalShell> }

@@ -1,27 +1,28 @@
-import { Apple, Play } from 'lucide-react'
+import { Apple, Clock3, Play } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export function GooglePlayBadge({ className }: { className?: string }) {
   return (
-    <a
-      href="#download"
+    <div
+      aria-label="BudgetWise for Android is coming soon"
       className={cn(
-        'inline-flex items-center gap-3 rounded-2xl bg-primary px-5 py-3 text-primary-foreground shadow-lg shadow-primary/25 transition-transform duration-200 hover:-translate-y-0.5',
+        'inline-flex cursor-default items-center gap-3 rounded-2xl bg-primary px-5 py-3 text-primary-foreground shadow-lg shadow-primary/25',
         className,
       )}
     >
       <Play className="size-6 fill-current" />
       <span className="flex flex-col text-left leading-tight">
-        <span className="text-[0.65rem] font-medium opacity-90">GET IT ON</span>
-        <span className="text-base font-semibold">Google Play</span>
+        <span className="text-[0.65rem] font-medium opacity-90">ANDROID APP</span>
+        <span className="text-base font-semibold">Coming Soon</span>
       </span>
-    </a>
+    </div>
   )
 }
 
 export function AppStoreBadge({ className }: { className?: string }) {
   return (
     <div
+      aria-label="BudgetWise for iPhone is planned"
       className={cn(
         'inline-flex items-center gap-3 rounded-2xl border border-border bg-card px-5 py-3 text-foreground',
         className,
@@ -29,11 +30,18 @@ export function AppStoreBadge({ className }: { className?: string }) {
     >
       <Apple className="size-6" />
       <span className="flex flex-col text-left leading-tight">
-        <span className="text-[0.65rem] font-medium text-muted-foreground">
-          COMING SOON ON
-        </span>
-        <span className="text-base font-semibold">App Store</span>
+        <span className="text-[0.65rem] font-medium text-muted-foreground">IOS APP</span>
+        <span className="text-base font-semibold">Planned</span>
       </span>
     </div>
+  )
+}
+
+export function LaunchStatus() {
+  return (
+    <span className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary">
+      <Clock3 className="size-4" />
+      Play Store launch in progress
+    </span>
   )
 }
