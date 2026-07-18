@@ -1,6 +1,10 @@
 import Image from 'next/image'
-import { Facebook, Instagram, Linkedin, MessageCircle, Youtube } from 'lucide-react'
-import { XIcon } from './social-icons'
+import { MessageCircle } from 'lucide-react'
+import {
+  InstagramIcon,
+  LinkedInIcon,
+  XIcon,
+} from './social-icons'
 
 const columns = [
   { title: 'Product', links: [{ label: 'Features', href: '/#features' }, { label: 'Screenshots', href: '/#screenshots' }, { label: 'Roadmap', href: '/roadmap' }, { label: 'Changelog', href: '/changelog' }] },
@@ -9,7 +13,13 @@ const columns = [
 ]
 
 const socials = [
-  { label: 'Facebook', Icon: Facebook }, { label: 'WhatsApp', Icon: MessageCircle }, { label: 'Instagram', Icon: Instagram }, { label: 'Twitter / X', Icon: XIcon }, { label: 'LinkedIn', Icon: Linkedin }, { label: 'YouTube', Icon: Youtube }, { label: 'Threads', Icon: MessageCircle },
+  { label: 'Facebook', Icon: MessageCircle },
+  { label: 'WhatsApp', Icon: MessageCircle },
+  { label: 'Instagram', Icon: InstagramIcon },
+  { label: 'Twitter / X', Icon: XIcon },
+  { label: 'LinkedIn', Icon: LinkedInIcon },
+  { label: 'YouTube', Icon: MessageCircle },
+  { label: 'Threads', Icon: MessageCircle },
 ]
 
 export function Footer() {
