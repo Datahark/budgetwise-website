@@ -51,10 +51,10 @@ export default function DeleteAccountPage() {
         <p>
           Email:{' '}
           <a
-            href="mailto:support@budgetwise.in?subject=Delete%20My%20Account"
+            href="mailto:contact@budgetwise.in?subject=Delete%20My%20Account"
             className="font-semibold text-primary underline underline-offset-4"
           >
-            support@budgetwise.in
+            contact@budgetwise.in
           </a>
         </p>
 
@@ -141,10 +141,10 @@ export default function DeleteAccountPage() {
         <p>
           Contact{' '}
           <a
-            href="mailto:support@budgetwise.in"
+            href="mailto:contact@budgetwise.in"
             className="font-semibold text-primary underline underline-offset-4"
           >
-            support@budgetwise.in
+            contact@budgetwise.in
           </a>{' '}
           for questions about account deletion.
         </p>
